@@ -18,9 +18,7 @@
 		147E231128A9A8FE00ED1D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E231028A9A8FE00ED1D60 /* ContentView.swift */; };
 		147E231328A9A8FE00ED1D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E231228A9A8FE00ED1D60 /* Assets.xcassets */; };
 		147E231628A9A8FE00ED1D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E231528A9A8FE00ED1D60 /* Preview Assets.xcassets */; };
-		147E232028A9A8FF00ED1D60 /* landmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E231F28A9A8FF00ED1D60 /* landmarksTests.swift */; };
-		147E232A28A9A8FF00ED1D60 /* landmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E232928A9A8FF00ED1D60 /* landmarksUITests.swift */; };
-		147E232C28A9A8FF00ED1D60 /* landmarksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E232B28A9A8FF00ED1D60 /* landmarksUITestsLaunchTests.swift */; };
+		1486A1E228BBB6FB00B19563 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1486A1E128BBB6FB00B19563 /* FavoriteButton.swift */; };
 		14909F6E28B95664008CE943 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14909F6D28B95664008CE943 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,10 +53,8 @@
 		147E231228A9A8FE00ED1D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147E231528A9A8FE00ED1D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		147E231B28A9A8FF00ED1D60 /* landmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = landmarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		147E231F28A9A8FF00ED1D60 /* landmarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landmarksTests.swift; sourceTree = "<group>"; };
 		147E232528A9A8FF00ED1D60 /* landmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = landmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		147E232928A9A8FF00ED1D60 /* landmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landmarksUITests.swift; sourceTree = "<group>"; };
-		147E232B28A9A8FF00ED1D60 /* landmarksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landmarksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1486A1E128BBB6FB00B19563 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		14909F6D28B95664008CE943 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +94,9 @@
 		147C7D6528BA2E55006BCBCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				147C7D6828BA307F006BCBCF /* Shared */,
-				147C7D6728BA3073006BCBCF /* Screen */,
+				147E231028A9A8FE00ED1D60 /* ContentView.swift */,
+				1486A1E428BBBAD400B19563 /* Landmarks */,
+				1486A1E328BBBAC300B19563 /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,32 +110,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		147C7D6728BA3073006BCBCF /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				147E231028A9A8FE00ED1D60 /* ContentView.swift */,
-			);
-			path = Screen;
-			sourceTree = "<group>";
-		};
-		147C7D6828BA307F006BCBCF /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				141A2A4328B954B800F6231D /* CircleImage.swift */,
-				14909F6D28B95664008CE943 /* MapView.swift */,
-				14595D1728BA334C00D6C3C1 /* LandmarkRow.swift */,
-				14595D1928BA3BBB00D6C3C1 /* LandmarkList.swift */,
-				14595D1B28BA407500D6C3C1 /* LandmarkDetail.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		147E230228A9A8FE00ED1D60 = {
 			isa = PBXGroup;
 			children = (
 				147E230D28A9A8FE00ED1D60 /* landmarks */,
-				147E231E28A9A8FF00ED1D60 /* landmarksTests */,
-				147E232828A9A8FF00ED1D60 /* landmarksUITests */,
 				147E230C28A9A8FE00ED1D60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -174,21 +149,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		147E231E28A9A8FF00ED1D60 /* landmarksTests */ = {
+		1486A1E328BBBAC300B19563 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				147E231F28A9A8FF00ED1D60 /* landmarksTests.swift */,
+				1486A1E128BBB6FB00B19563 /* FavoriteButton.swift */,
+				14909F6D28B95664008CE943 /* MapView.swift */,
+				141A2A4328B954B800F6231D /* CircleImage.swift */,
 			);
-			path = landmarksTests;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		147E232828A9A8FF00ED1D60 /* landmarksUITests */ = {
+		1486A1E428BBBAD400B19563 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				147E232928A9A8FF00ED1D60 /* landmarksUITests.swift */,
-				147E232B28A9A8FF00ED1D60 /* landmarksUITestsLaunchTests.swift */,
+				14595D1B28BA407500D6C3C1 /* LandmarkDetail.swift */,
+				14595D1928BA3BBB00D6C3C1 /* LandmarkList.swift */,
+				14595D1728BA334C00D6C3C1 /* LandmarkRow.swift */,
 			);
-			path = landmarksUITests;
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +303,7 @@
 				147E231128A9A8FE00ED1D60 /* ContentView.swift in Sources */,
 				14909F6E28B95664008CE943 /* MapView.swift in Sources */,
 				147E230F28A9A8FE00ED1D60 /* landmarksApp.swift in Sources */,
+				1486A1E228BBB6FB00B19563 /* FavoriteButton.swift in Sources */,
 				14595D1A28BA3BBB00D6C3C1 /* LandmarkList.swift in Sources */,
 				14595D1C28BA407500D6C3C1 /* LandmarkDetail.swift in Sources */,
 				141A2A4428B954B800F6231D /* CircleImage.swift in Sources */,
@@ -338,7 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147E232028A9A8FF00ED1D60 /* landmarksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147E232C28A9A8FF00ED1D60 /* landmarksUITestsLaunchTests.swift in Sources */,
-				147E232A28A9A8FF00ED1D60 /* landmarksUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

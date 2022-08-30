@@ -25,6 +25,7 @@
 		147E231628A9A8FE00ED1D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E231528A9A8FE00ED1D60 /* Preview Assets.xcassets */; };
 		1486A1E228BBB6FB00B19563 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1486A1E128BBB6FB00B19563 /* FavoriteButton.swift */; };
 		14909F6E28B95664008CE943 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14909F6D28B95664008CE943 /* MapView.swift */; };
+		14ECEF9028BED54400362A75 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ECEF8F28BED54400362A75 /* hikeData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		147E232528A9A8FF00ED1D60 /* landmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = landmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1486A1E128BBB6FB00B19563 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		14909F6D28B95664008CE943 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		14ECEF8F28BED54400362A75 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		14595D1628BA32D700D6C3C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14ECEF8F28BED54400362A75 /* hikeData.json */,
 				14595D1428BA328D00D6C3C1 /* landmarkData.json */,
 			);
 			path = Resources;
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ECEF9028BED54400362A75 /* hikeData.json in Resources */,
 				147E231628A9A8FE00ED1D60 /* Preview Assets.xcassets in Resources */,
 				147E231328A9A8FE00ED1D60 /* Assets.xcassets in Resources */,
 				14595D1528BA328D00D6C3C1 /* landmarkData.json in Resources */,
